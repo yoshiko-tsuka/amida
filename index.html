@@ -10,11 +10,13 @@
   </head>
   <body>
     <div class="col-sm-12">
-      <h2>  **あみだくじ** </h2>
+      <h2>  **ladder lottery** </h2>
     </div>
   <form id="personNum">
-    <label class="col-sm-12">人数</label>
-    <div class="col-sm-3">
+    
+    <div class="col-sm-12">
+      <label class="col-sm-12">Participants</label>
+    <div class="col-sm-2">
       <select class="form-control" name="personNum">
         <option selected>2</option>
         <option value="3">3</option>
@@ -27,39 +29,43 @@
         <option value="10">10</option>
       </select>
     </div>
-    <div class="col-sm-3">
-    <button type="button" class="btn btn-info" id="amida_start">あみだくじスタート</button>
-    </div>
+    
+   
+    <div>
   </form>
   <div>
   <form id="personName">
-    <label class="col-sm-12">名前</label>
+    <label class="col-sm-12">Name</label>
     <div class="col-sm-2 name1">
-      <input type="text" class="form-control" name="name1" placeholder="1人目">
+      <input type="text" class="form-control" name="name1" placeholder="person 1">
     </div>
     <div class="col-sm-2 name2">
-      <input type="text" class="form-control" name="name2" placeholder="2人目">
+      <input type="text" class="form-control" name="name2" placeholder="person 2">
     </div>
   </form>
   </div>
   
   <div>
   <form id="roll">
-    <label class="col-sm-12">くじの結果</label>
+    <label class="col-sm-12">Result</label>
     <div class="col-sm-2 num1">
-      <input type="text" class="form-control" name="result1" placeholder="結果1">
+      <input type="text" class="form-control" name="result1" placeholder="win">
     </div>
     <div class="col-sm-2 num2">
-      <input type="text" class="form-control" name="result2" placeholder="結果2">
+      <input type="text" class="form-control" name="result2" placeholder="lose">
     </div>
   </form>
   </div>
   
+  <div class="col-sm-4">
+    <button type="button" class="btn btn-info" id="amida_start">Lottery Start!!</button>
+  </div>
   <div class="col-sm-12">
     <div class="col-sm-12" id="trace"> 
     </div> 
-  <canvas id="canvassample" width="1000" height="500"></canvas>
+  
   </div>
+  <canvas id="canvassample" width="1000" height="500"></canvas>
   <script src="js/vendor/jquery-2.2.4.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/vendor/moment.min.js"></script>

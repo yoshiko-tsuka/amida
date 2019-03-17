@@ -19,10 +19,11 @@ function draw(num) {
   var xheight = 60*i;
   var namecl = "name" + i ;
   var resultcl = "result" + i;
-  var nameval = $('#personName [name=' + namecl + ']').val();
+  var nameval = i + ":" + $('#personName [name=' + namecl + ']').val();
   var resultval = $('#roll [name=' + resultcl + ']').val();
   ctx.font = "20px sans-serif";
   ctx.textAlign = "center";
+  ctx.fillStyle = "rgb(91,192,222)";
   ctx.fillText(nameval, xheight, 90, 40);
   ctx.fillText(resultval, xheight, 420, 40);
   ctx.beginPath();
@@ -195,13 +196,13 @@ $(document).ready(function() {
       var appendcl = "col-sm-2 name" + i ;
       console.log(appendcl);
       $("#personName").append($('<div class="' + appendcl + '">')
-      .append('<input type="text" class="form-control" name="name' + i + '" placeholder="' + i + '人目">'));
+      .append('<input type="text" class="form-control" name="name' + i + '" placeholder="person ' + i + '">'));
     }
     for(var i=1; i<= personNum; i++ ){
       var appendcl = "col-sm-2 num" + i ;
       console.log(appendcl);
       $("#roll").append($('<div class="' + appendcl + '">')
-      .append('<input type="text" class="form-control" name="result' + i + '" placeholder="結果' + i + '">'));
+      .append('<input type="text" class="form-control" name="result' + i + '" placeholder="result ' + i + '">'));
     }
     var personNumOld = personNum;
     pnum = personNum;

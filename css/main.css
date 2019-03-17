@@ -12,6 +12,8 @@ body {
     "Segoe UI", "Roboto", "Droid Sans", sans-serif;
 }
 
+
+
 /**
  * navbarのメニュー
  */
@@ -59,6 +61,19 @@ body {
   font-size: 46px;
   animation: spin 2s linear infinite;
 }
+
+#trace{
+  margin-top: 20px;
+}
+
+button{
+  margin: 20px 5px 5px 0px;
+}
+
+label{
+  margin: 20px 5px 5px 0px;
+}
+
 
 /* 回転するアニメーション */
 @keyframes spin {
